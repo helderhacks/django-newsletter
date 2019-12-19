@@ -13,6 +13,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.messages',
     'django.contrib.admin',
+    'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
     'sorl.thumbnail',

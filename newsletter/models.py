@@ -144,7 +144,7 @@ class Subscription(models.Model):
 
     name_field = models.CharField(
         db_column='name', max_length=30, blank=True, null=True,
-        verbose_name=_('name'), help_text=_('optional')
+        verbose_name=_('name')
     )
 
     def get_name(self):
