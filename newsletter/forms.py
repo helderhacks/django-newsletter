@@ -41,7 +41,7 @@ class SubscribeRequestForm(NewsletterForm):
     """
 
     email_field = forms.EmailField(
-        label=_("e-mail"), validators=[validate_email_nouser]
+        label=_("E-mail"), validators=[validate_email_nouser]
     )
 
     def clean_email_field(self):
@@ -76,7 +76,7 @@ class UpdateRequestForm(NewsletterForm):
     """
 
     email_field = forms.EmailField(
-        label=_("e-mail"), validators=[validate_email_nouser]
+        label=_("E-mail"), validators=[validate_email_nouser]
     )
 
     class Meta(NewsletterForm.Meta):
@@ -131,7 +131,7 @@ class UpdateForm(NewsletterForm):
     """
 
     email_field = forms.EmailField(
-        label=_("e-mail"), validators=[validate_email_nouser], disabled=True
+        label=_("E-mail"), validators=[validate_email_nouser], disabled=True
     )
 
     def clean_user_activation_code(self):
